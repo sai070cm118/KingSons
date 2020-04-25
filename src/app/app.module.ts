@@ -21,7 +21,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 
 // Auth service
-import { AuthModule } from './shared/auth.module';
+import { AuthModule } from './Shared/auth.module';
 
 // Syncfusion Modules
 import { GridModule, GridAllModule, ResizeService, EditService, ToolbarService  } from '@syncfusion/ej2-angular-grids';
