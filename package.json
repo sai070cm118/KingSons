@@ -16,12 +16,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "http-server",
+    "start": "node server.js",
     "build": "ng build --prod --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "preinstall": "npm install -g angular-cli"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +47,7 @@
     "bootstrap": "^4.3.1",
     "chart.js": "^2.9.1",
     "core-js": "^2.6.10",
+    "express": "^4.17.1",
     "flag-icon-css": "^3.4.5",
     "font-awesome": "^4.7.0",
     "moment": "^2.24.0",
@@ -56,6 +57,7 @@
     "ngx-perfect-scrollbar": "^8.0.0",
     "ngx-toastr": "^10.0.4",
     "ngx-ui-loader": "^8.0.0",
+    "path": "^0.12.7",
     "pluck": "0.0.4",
     "rxjs": "^6.5.3",
     "simple-line-icons": "^2.4.1",
