@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
@@ -13,7 +12,7 @@ import { TokenInterceptor } from './interceptors/TokenInterceptor';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [],
   providers: [
     RouteAuthGuard,
     SecureInnerPagesGuard,
