@@ -1,0 +1,13 @@
+<ejs-grid #userGrid  [dataSource]='data'  [editSettings]='editSettings'  [allowSorting]="true"  [toolbar]='toolbar' [allowPaging]='true' [pageSettings]='pageSettings'  (created)='gridInitialize()' (actionBegin)='actionBegin($event)' (actionComplete)='actionComplete($event)'>
+    
+    <e-columns>
+        <e-column field='Id' headerText='ID'  width='50' [isPrimaryKey]='true'></e-column>
+        <e-column field='UserName' headerText='UserName' width='120' ></e-column>
+        <e-column field='FirstName' headerText='FirstName'  width='120'></e-column>
+        <e-column field='LastName' headerText='LastName'  width='120'></e-column>
+        <e-column field='Email' headerText='Email'  width='120'></e-column>
+        <e-column field='Mobile' headerText='Mobile'  width='120'></e-column>
+        <e-column field='IsActive' headerText='IsActive'  width='120'></e-column>
+    </e-columns>
+
+</ejs-grid>

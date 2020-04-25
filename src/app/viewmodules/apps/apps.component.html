@@ -1,0 +1,8 @@
+<ejs-grid #grid (dataBound)='dataBound()'  [dataSource]='data' (actionComplete)="actionComplete($event)"  [editSettings]='editSettings'  [allowSorting]="true"  [toolbar]='toolbar' height='273px'>
+    <e-columns>
+        <e-column  field='Id' headerText='ID' textAlign='Right' width='10' allowEditing='false' ></e-column>
+        <e-column   field='Name' headerText='Name' width=120></e-column>
+        <e-column field='Description' headerText='Description' textAlign= 'Right' width=200></e-column>
+        <e-column field='Appkey' headerText='Appkey'  width=200></e-column>
+    </e-columns>
+</ejs-grid>

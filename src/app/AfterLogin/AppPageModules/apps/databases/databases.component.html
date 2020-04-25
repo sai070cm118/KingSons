@@ -1,0 +1,102 @@
+<ejs-grid #databasesGrid  [dataSource]='data'  [editSettings]='editSettings'  [allowSorting]="true"  [toolbar]='toolbar' [allowPaging]='true' [pageSettings]='pageSettings'   (created)='gridInitialize()' (actionBegin)='actionBegin($event)' (actionComplete)='actionComplete($event)'>
+    <e-columns>
+        <e-column field='Id' headerText='ID'  width='50' [isPrimaryKey]='true'></e-column>
+        <e-column field='Description' headerText='Description' width='120' ></e-column>
+        <e-column field='Server' headerText='Server'  width='120'></e-column>
+        <e-column field='Name' headerText='Name'  width='120'></e-column>
+        <e-column field='UserId' headerText='UserId'  width='120'></e-column>
+        <e-column field='Password' headerText='Password'  width='120'></e-column>
+        <e-column field='Details' headerText='Details'  width='120'></e-column>
+        <e-column  headerText='Sync Procedures'  width='120' >
+            <ng-template #template let-data> <button ejs-button cssClass="e-primary" (click)="syncProcedures($event, data )">Sync Procedures</button></ng-template> 
+        </e-column>
+    </e-columns>
+
+    <ng-template #editSettingsTemplate let-data>
+        <div ngForm #databasesForm="ngForm">
+
+
+            <div class="form-row">
+                <div class="form-group col-md-12">                   
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': Description.invalid && (Description.dirty || Description.touched)}">                       
+                        <input [(ngModel)]="databaseData.Description" id="Description" name="Description" type="text" #Description="ngModel">                        
+                        <span class="e-float-line"></span>                        
+                        <label class="e-float-text e-label-top" for="Description">Description</label>                   
+                    </div>                    
+                    <div id="DescriptionError" *ngIf='Description.invalid && (Description.dirty || Description.touched)'>                        
+                        <label class="e-error" id="Description-info" style="display: block;">*Description is required</label>                    
+                    </div>               
+                </div> 
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">                   
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': Server.invalid && (Server.dirty || Server.touched)}">                       
+                        <input [(ngModel)]="databaseData.Server" id="Server" name="Server" type="text" #Server="ngModel">                        
+                        <span class="e-float-line"></span>                        
+                        <label class="e-float-text e-label-top" for="Server">Server</label>                   
+                    </div>                    
+                    <div id="ServerError" *ngIf='Server.invalid && (Server.dirty || Server.touched)'>                        
+                        <label class="e-error" id="Server-info" style="display: block;">*Server is required</label>                    
+                    </div>               
+                </div> 
+            </div>
+            
+            <div class="form-row">
+                               
+                <div class="form-group col-md-12">                   
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': Name.invalid && (Name.dirty || Name.touched)}">                       
+                        <input [(ngModel)]="databaseData.Name" id="Name" name="Name" type="text" #Name="ngModel">                        
+                        <span class="e-float-line"></span>                        
+                        <label class="e-float-text e-label-top" for="Name">Name</label>                   
+                    </div>                    
+                    <div id="NameError" *ngIf='Name.invalid && (Name.dirty || Name.touched)'>                        
+                        <label class="e-error" id="Name-info" style="display: block;">*Name is required</label>                    
+                    </div>               
+                </div>
+                        
+            </div>    
+
+            <div class="form-row">
+                <div class="form-group col-md-12">                   
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': UserId.invalid && (UserId.dirty || UserId.touched)}">                       
+                        <input [(ngModel)]="databaseData.UserId" id="UserId" name="UserId" type="text" #UserId="ngModel">                        
+                        <span class="e-float-line"></span>                        
+                        <label class="e-float-text e-label-top" for="UserId">UserId</label>                   
+                    </div>                    
+                    <div id="UserIdError" *ngIf='UserId.invalid && (UserId.dirty || UserId.touched)'>                        
+                        <label class="e-error" id="UserId-info" style="display: block;">*UserId is required</label>                    
+                    </div>               
+                </div> 
+            </div>
+
+
+            <div class="form-row">
+                <div class="form-group col-md-12">                   
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': Password.invalid && (Password.dirty || Password.touched)}">                       
+                        <input [(ngModel)]="databaseData.Password" id="Password" name="Password" type="text" #Password="ngModel">                        
+                        <span class="e-float-line"></span>                        
+                        <label class="e-float-text e-label-top" for="Password">Password</label>                   
+                    </div>                    
+                    <div id="PasswordError" *ngIf='Password.invalid && (Password.dirty || Password.touched)'>                        
+                        <label class="e-error" id="Password-info" style="display: block;">*Password is required</label>                    
+                    </div>               
+                </div> 
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">                   
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': Details.invalid && (Details.dirty || Details.touched)}">                       
+                        <input [(ngModel)]="databaseData.Details" id="Details" name="Details" type="text" #Details="ngModel">                        
+                        <span class="e-float-line"></span>                        
+                        <label class="e-float-text e-label-top" for="Details">Details</label>                   
+                    </div>                    
+                    <div id="DetailsError" *ngIf='Details.invalid && (Details.dirty || Details.touched)'>                        
+                        <label class="e-error" id="Details-info" style="display: block;">*Details is required</label>                    
+                    </div>               
+                </div> 
+            </div>
+
+        </div> 
+    </ng-template> 
+
+</ejs-grid>
