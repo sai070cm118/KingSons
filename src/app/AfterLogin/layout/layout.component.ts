@@ -1,6 +1,6 @@
 import {Component } from '@angular/core';
 import { navItems } from './_nav';
-import { AuthService } from '../../shared/services/auth.service';
+import { AuthService } from '../../Shared/services/auth.service';
 
 @Component({
   selector: 'app-layout',

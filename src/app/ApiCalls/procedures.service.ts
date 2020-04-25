@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { of, Observable, throwError } from 'rxjs';
 import { catchError, mapTo, tap  } from 'rxjs/operators';
-import { AppConfig } from '../shared/config/appConfig';
+import { AppConfig } from '../Shared/config/appConfig';
 
 @Injectable({
   providedIn: 'root'

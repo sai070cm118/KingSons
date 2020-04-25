@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewChild  } from '@angular/core';
 import { AppsService } from './apps.service';
-import { AuthService } from '../../shared/services/auth.service';
+import { AuthService } from '../../Shared/services/auth.service';
 import { catchError, filter, take, switchMap } from 'rxjs/operators';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
-import { AppConfig } from '../../shared/config/appConfig';
+import { AppConfig } from '../../Shared/config/appConfig';
 import { GridComponent, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 

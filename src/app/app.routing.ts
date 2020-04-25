@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Import canActivate guards
-import { RouteAuthGuard } from './shared/guard/routeauth.guard';
-import { SecureInnerPagesGuard } from './shared/guard/secure-inner-pages.guard';
+import { RouteAuthGuard } from './Shared/guard/routeauth.guard';
+import { SecureInnerPagesGuard } from './Shared/guard/secure-inner-pages.guard';
 
 // Module Components
 import { P404Component } from './BeforeOrAfterLogin/Errors/p404/p404.component';
