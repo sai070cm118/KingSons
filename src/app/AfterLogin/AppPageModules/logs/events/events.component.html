@@ -1,9 +1,0 @@
-<ejs-grid #auditlogGrid  [dataSource]='data'    [allowSorting]="true"   [allowPaging]='true' [pageSettings]='pageSettings'  (created)='gridInitialize()' (actionBegin)='actionBegin($event)'>
-    <e-columns>
-        <e-column field='Id' headerText='ID'  width='100' [isPrimaryKey]='true'></e-column>
-        <e-column field='LogDate' headerText='Log Date' width='100' ></e-column>
-        <e-column field='Type' headerText='Type' width='100'></e-column>
-        <e-column field='Message' headerText='Message'  width='200'></e-column>
-        <e-column field='User' headerText='User'  width='100'></e-column>
-    </e-columns>
-</ejs-grid>

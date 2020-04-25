@@ -1,94 +1,23 @@
 {
   "name": "kingsons",
-  "version": "0.0.1",
-  "description": "KingSons Administration",
-  "author": {
-    "name": "Sairam Vinnakota"
-  },
-  "contributors": [
-    {
-      "name": "Sairam Vinnakota",
-      "url": "https://github.com/Kingsons"
-    }
-  ],
-  "homepage": "https://coreui.io/angular",
-  "copyright": "Copyright 2020 Kingsons",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build --prod --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sai070cm118/kingsons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sai070cm118/kingsons/issues"
+  },
+  "homepage": "https://github.com/sai070cm118/kingsons#readme",
   "dependencies": {
-    "@angular/animations": "^8.2.10",
-    "@angular/common": "^8.2.12",
-    "@angular/compiler": "^8.2.12",
-    "@angular/core": "^8.2.12",
-    "@angular/forms": "^8.2.12",
-    "@angular/platform-browser": "^8.2.12",
-    "@angular/platform-browser-dynamic": "^8.2.12",
-    "@angular/router": "^8.2.12",
-    "@coreui/angular": "^2.6.3",
-    "@coreui/coreui": "^2.1.16",
-    "@coreui/coreui-plugin-chartjs-custom-tooltips": "^1.3.1",
-    "@coreui/icons": "0.3.0",
-    "@syncfusion/ej2-angular-buttons": "^18.1.43",
-    "@syncfusion/ej2-angular-calendars": "^17.4.51",
-    "@syncfusion/ej2-angular-dropdowns": "^17.4.51",
-    "@syncfusion/ej2-angular-grids": "^17.4.55",
-    "@syncfusion/ej2-angular-inputs": "^17.4.55",
-    "@syncfusion/ej2-angular-popups": "^18.1.43",
-    "@syncfusion/ej2-angular-richtexteditor": "^18.1.44",
-    "bootstrap": "^4.3.1",
-    "chart.js": "^2.9.1",
-    "core-js": "^2.6.10",
-    "express": "^4.17.1",
-    "flag-icon-css": "^3.4.5",
-    "font-awesome": "^4.7.0",
-    "moment": "^2.24.0",
-    "mutationobserver-shim": "^0.3.3",
-    "ng2-charts": "^2.3.0",
-    "ngx-bootstrap": "^5.2.0",
-    "ngx-perfect-scrollbar": "^8.0.0",
-    "ngx-toastr": "^10.0.4",
-    "ngx-ui-loader": "^8.0.0",
-    "path": "^0.12.7",
-    "pluck": "0.0.4",
-    "rxjs": "^6.5.3",
-    "simple-line-icons": "^2.4.1",
-    "ts-helpers": "^1.1.2",
-    "tsickle": "^0.37.0",
-    "tslib": "^1.10.0",
-    "web-animations-js": "^2.3.2",
-    "zone.js": "^0.10.2"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.15",
-    "@angular/cli": "^8.3.15",
-    "@angular/compiler-cli": "^8.2.12",
-    "@angular/language-service": "^8.2.12",
-    "@types/jasmine": "^3.4.4",
-    "@types/jasminewd2": "^2.0.8",
-    "@types/node": "^12.7.12",
-    "codelyzer": "^5.2.0",
-    "jasmine-core": "^3.5.0",
-    "jasmine-spec-reporter": "^4.2.1",
-    "karma": "^4.4.1",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-coverage-istanbul-reporter": "^2.1.0",
-    "karma-jasmine": "^2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
-    "protractor": "^5.4.2",
-    "ts-node": "^8.4.1",
-    "tslint": "^5.20.0",
-    "typescript": "~3.4.5"
-  },
-  "engines": {
-    "node": ">= 12",
-    "npm": ">= 6"
+    "express": "^4.17.1"
   }
 }
