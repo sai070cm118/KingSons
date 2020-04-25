@@ -20,8 +20,7 @@
     "build": "ng build --prod --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
